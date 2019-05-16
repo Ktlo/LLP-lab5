@@ -1,0 +1,8 @@
+/.vscode
+*.o
+*.a
+*.d
+/test/*.test
+# Здесь должно быть имя исполняемого файла для тестовой программы
+/src/cheburashka
+/cheburashka
