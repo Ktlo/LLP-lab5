@@ -47,4 +47,4 @@ uninstall:
 clean:
 	$(MAKE) -C src clean
 	$(MAKE) -C test clean
-	$(RM) $(NAME)
+	$(RM) $(NAME)$(EXE)
