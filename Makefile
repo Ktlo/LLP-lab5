@@ -15,7 +15,7 @@ includes=${wildcard include/*.h}
 ifdef DEBUG
   CFLAGS:=$(CFLAGS) -g -DDEBUG
 else
-  CFLAGS:=$(CFLAGS) -O3
+  CFLAGS:=$(CFLAGS) -O3 -DNDEBUG
 endif
 
 .PHONY: build
