@@ -8,6 +8,7 @@ test: $(test)
 %.test: %.c
 	$(CC) $(CFLAGS) -DTEST -I../src $< -L../src -l$(NAME) -o $@
 	$(GDB) ./$@
+	@$(RM) $@
 
 .PHONY: clean
 clean:
