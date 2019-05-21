@@ -16,7 +16,7 @@ int test_counter = 0;
 #define TEST_ASSERTION_FAILED(val_type) \
 		fprintf(stderr, "assertion error:%s:%d: \"" val_type "\" (%s) expected, got \"" val_type "\" (%s)\n", \
 			file, line, a, expected, b, actual); \
-		exit(-1);
+		abort();
 
 void _assert_equals_int(long long a, long long b, const char *file, int line, const char *expected, const char *actual) {
 	if (a != b) {
